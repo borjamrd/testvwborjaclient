@@ -1,0 +1,42 @@
+
+@media only screen and (min-width: 760px){
+  .cars-section {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    padding: 20px;
+    border: 40px;
+}
+}
+
+
+
+.eachcar {
+  background-color: #ffffff10;
+  border-radius: 8px;
+  border: 40px;
+  padding: 20px;
+  position: relative;
+  
+}
+
+
+@media only screen and (min-width: 760px){
+  .eachcar  {
+    margin: 0 1.5% 28px 1.5%;
+    width: 43%;
+}
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+#borja{
+  border-radius: 50%;
+}
+.itemmenu{
+  padding: 5px 10px;
+}
