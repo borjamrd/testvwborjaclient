@@ -10,7 +10,6 @@ import { Main } from './components/main/main';
 import { DetailView } from './components/detailview';
 import borja from './borja.jpg'
 
-
 function App() {
 
   //Si me da tiempo añadir Header y Footer
@@ -26,7 +25,7 @@ function App() {
           
           
         </nav>
-        <h1>Últimos vehículos</h1>
+        <h1>Vehículos ocasión</h1>
         <Switch>
           <Route path="/" element={<Main />}/>
           <Route path="/:id" element={<DetailView/>}/> 

@@ -5,10 +5,11 @@
     flex-flow: row wrap;
     position: relative;
     padding: 20px;
-    border: 40px;
 }
 }
-
+svg{
+  padding: 5px;
+}
 
 
 .eachcar {

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 5%;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;

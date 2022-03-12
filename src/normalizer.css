@@ -168,13 +168,14 @@ button{
         height: 60px;
         border-radius: 50px;
         border: 0;
+        margin: 15px;
 }
 button:hover{
     background-color: #33434c;
         color: white
 }
   
-  button,
+  
   input,
   optgroup,
   select,
@@ -183,6 +184,13 @@ button:hover{
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
+  }
+
+  button{
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 10px 5px;
   }
   
   /**
@@ -363,4 +371,10 @@ button:hover{
   
   [hidden] {
     display: none;
+  }
+  a{
+    color: white;
+  }
+  a:hover{
+    color:#f06409
   }
