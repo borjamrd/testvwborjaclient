@@ -1,0 +1,18 @@
+#myHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 2;
+    
+  }
+  .sticky{
+      position: fixed;
+      top: 0;
+      width: 100%;
+  }
+  #borja{
+    border-radius: 50%;
+  }
+  .itemmenu{
+    padding: 5px 10px;
+  }

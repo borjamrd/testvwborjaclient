@@ -1,14 +1,15 @@
 
 import './App.css';
 import {
-  BrowserRouter as Router,
+
   Routes as Switch,
   Route
 } from "react-router-dom";
 
 import { Main } from './components/main/main';
 import { DetailView } from './components/detailview';
-import borja from './borja.jpg'
+
+import { Menu } from './components/header';
 
 function App() {
 
@@ -16,15 +17,7 @@ function App() {
  
   return (
     <div className="App">
-        <nav className='header'>
-          <img src={borja} height='55px' id='borja'></img>
-          <span className='itemmenu'>Borja</span>
-          <span className='itemmenu'>Documentación</span>
-          <span className='itemmenu'>Recursos</span>
-          <input className='itemmenu' type='search' placeholder='Busca un coche'></input>
-          
-          
-        </nav>
+        <Menu />
         <h1>Vehículos ocasión</h1>
         <Switch>
           <Route path="/" element={<Main />}/>

@@ -13,14 +13,19 @@ svg{
 
 
 .eachcar {
+  display: flex;
+  flex-direction: column;
+  
   background-color: #ffffff10;
-  border-radius: 8px;
+  border-radius: 24px;
   border: 40px;
-  padding: 20px;
-  position: relative;
   
 }
 
+h2{
+  text-align: left;
+  padding-left: 40px;
+}
 
 @media only screen and (min-width: 760px){
   .eachcar  {
@@ -28,16 +33,27 @@ svg{
     width: 43%;
 }
 }
-
-.header{
+.car-image{
+  height: 400px;
+  border-radius: 24px 24px 0 0;
+  object-fit: cover;
+}
+.car-info-section,.car-button-section{
+  padding: 20px;
+}
+.price{
+  background-color: rgba(255, 235, 205, 0.103);
+  border-radius: 10px;
+  color:rgb(255, 255, 255);
+  padding: 10px;
+}
+.car-info-section{
+  text-align: left;
+  
+}
+.car-button-section{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-}
-#borja{
-  border-radius: 50%;
-}
-.itemmenu{
-  padding: 5px 10px;
+  justify-content:space-between;
+  align-content: space-between;
+
 }
