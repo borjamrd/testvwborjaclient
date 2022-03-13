@@ -18,7 +18,6 @@ function App() {
   return (
     <div className="App">
         <Menu />
-        <h1>Vehículos ocasión</h1>
         <Switch>
           <Route path="/" element={<Main />}/>
           <Route path="/:id" element={<DetailView/>}/> 

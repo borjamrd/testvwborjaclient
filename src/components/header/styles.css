@@ -2,8 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 2;
-    
+    padding: 20px 10px;
+    background: rgba(3, 3, 3, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.18 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 3;
+  
+        
   }
   .sticky{
       position: fixed;
@@ -14,5 +22,5 @@
     border-radius: 50%;
   }
   .itemmenu{
-    padding: 5px 10px;
+    padding: 5px 20px;
   }

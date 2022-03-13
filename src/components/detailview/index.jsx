@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { useState, useEffect } from 'react';
 import axios from 'axios'
 
+import './styles.css'
 
 import logo from '../../logo.svg'
 
@@ -44,28 +45,38 @@ export function DetailView() {
   return(
     <div>
       <a onClick={() => {navigation('/')}}>Atrás</a> 
-    
-      {carTitle.map((item)=>
-         <div car-info>
-          <img src={item.carImage}></img>
-          <h1>{item.carName}</h1>
-          <h3>Precio: {item.carPrice}</h3>  
-          <p>Financiación desde: {item.carFee}</p>
-          <h4>Prestaciones del motor</h4>
-          <ul>
-            <li>{item.carDataOne}</li>
-            <li></li>{item.carDataTwo}
-            <li>{item.carDataThree}</li>
-            <li>{item.carDataFour}</li>
-            <li>{item.carDataFive}</li>
 
-          </ul>
-          <p>¿Quieres verlo? Ven a <a target='_blank' href={item.carLocationLink}>{item.carLocation}</a></p>
-          <div className='button-section'>
+      {carTitle.map((item)=>
+      
+      <div>
+        <h1>{item.carName}</h1>
+         <div className='car-section' >
+          
+           <div className='image-section'>
+                <img src={item.carImage} className='car-image-ind' object-fit="cover" border-radius="25px"  />
+           </div>
+           <div className='info-section'>
+                
+                <h3>Precio: {item.carPrice}</h3>  
+                <p>Financiación desde: {item.carFee}</p>
+                <h4>Prestaciones del motor</h4>
+                <ul>
+                  <li>{item.carData1}</li>
+                  <li>{item.carData2}</li>
+                  <li>{item.carData3}</li>
+                  <li>{item.carData4}</li>
+                  <li>{item.carData5}</li>
+
+                </ul>
+                <p>¿Quieres verlo? Ven a <a target='_blank' href={item.carLocationLink}>{item.carLocation}</a></p>
+             <div className='button-section'>
               <button onClick={sendEmail}>Me interesa</button>
               <button><a href={item.carPhone} >Llámanos</a></button>
+             </div>
           </div>
+          
         </div>
+      </div>
         
       )}
      {/* <DemoCarousel /> */}

@@ -1,0 +1,19 @@
+
+.car-section{
+    display: flex;
+    flex-direction: row;
+}
+.image-section{
+    width: 60%;
+}
+.info-section{
+    width: 40%;     
+    text-align: left;
+}
+
+.car-image-ind{
+    height: 400px;
+    width: fit-content;
+    border-radius: 24px;
+    object-fit: cover;
+  }

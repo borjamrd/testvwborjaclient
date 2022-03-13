@@ -33,8 +33,12 @@ h2{
     width: 43%;
 }
 }
+/* .car-image-section{
+  height: 300px;
+    width: 100%;
+} */
 .car-image{
-  height: 400px;
+  height: 445px;
   border-radius: 24px 24px 0 0;
   object-fit: cover;
 }
@@ -47,6 +51,7 @@ h2{
   color:rgb(255, 255, 255);
   padding: 10px;
 }
+
 .car-info-section{
   text-align: left;
   
