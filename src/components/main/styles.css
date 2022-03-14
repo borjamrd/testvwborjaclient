@@ -12,6 +12,7 @@ svg{
 }
 
 
+
 .eachcar {
   display: flex;
   flex-direction: column;
@@ -25,6 +26,9 @@ svg{
 h2{
   text-align: left;
   padding-left: 40px;
+}
+.itemmenu{
+  justify-content: left;
 }
 
 @media only screen and (min-width: 760px){
